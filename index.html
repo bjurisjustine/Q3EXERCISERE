@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercise 4</title>
+</head>
+<body>
+    <script>
+    
+       var side1 = prompt("Input 1st number: ");
+       var side2 = prompt("Input the 2nd number: ");
+       var side3 = prompt("Input the 3rd number: ");
+       
+       if (isNaN(side1)|| isNaN(side2) || isNaN(side3)) {
+        alert("NaN.");
+       }
+       else{
+        window.alert(determineTriangle (side1, side2, side3));
+       }
+
+       
+        function determineTriangle(side1, side2, side3){
+        if ( side1 == side2 && side2 == side3) {
+          return ("The triangle is EQUILATERAL.");
+        } else if (side1 == side2 || side2 == side3 || side1 == side3) {
+            return("The triangle is ISOSCELES.");
+        } else { 
+          return ("The triangle is SCALENE.");
+        }
+
+        }
+       
+ 
+    </script>
+</body>
+</html>
